@@ -8,28 +8,30 @@ import PublicacoesPage from "./components/Pages/PublicacoesPage";
 import QuemSomosPage from "./components/Pages/QuemSomosPage";
 import {
   BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
 } from "react-router-dom"
-import {data as dataC} from "./components/ControleSection/Data"
-import {data as dataE} from "./components/EficienciaSection/Data"
+import {dataControle} from "./components/ControleSection/Data"
+import {dataEficiencia} from "./components/ControleSection/Data"
 
 function App() {
   const [stateC, setStateC] = useState({
-    controle_automacao: dataC
+    controle_automacao: dataControle
   });
 
   const [stateE, setStateE] = useState({
-    eficiencia_energetica: dataE
+    eficiencia_energetica: dataEficiencia
   });
 
   return (
     <div className='App'>
-      <Router>
+      <HashRouter>
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/quem_somos" component={QuemSomosPage} />
           <Route exact path="/automacao_controle" component={ControlePage} />
+          <Route exact path="/linhas_pesquisa" component={ControlePage} />
           <Route exact path="/eficiencia_energetica" component={EficienciaPage} />
           <Route exact path="/publicacoes" component={PublicacoesPage} />
           {stateC.controle_automacao.map(item => (
@@ -39,7 +41,7 @@ function App() {
           <Route exact path={item.url} render={() => <BannerPage item={item}/>}/>
           ))}
         </Switch>
-      </Router>
+      </HashRouter>
     </div>
   );
 }

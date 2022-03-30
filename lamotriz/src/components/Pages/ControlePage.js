@@ -6,6 +6,7 @@ import Footer from '../Footer'
 import Sidebar from '../Sidebar';
 import Title from '../TitleSection';
 import { animateScroll as scroll } from 'react-scroll'
+import styled from "styled-components";
 
 function ControlePage() {
 
@@ -20,15 +21,19 @@ function ControlePage() {
         scroll.scrollToTop()
     }
 
-    const pagina = {
-        texto: "Automação e Controle"
+    const paginaAutomacao = {
+        texto: "Linhas de pesquisa"
+    }
+
+    const paginaEficiencia = {
+        texto: "Eficiência Energética"
     }
 
     return(
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} toggleAndScroll={toggleAndScroll}/>
             <Navbar toggle={toggle} isOpen={isOpen} toggleAndScroll={toggleAndScroll}/>
-            <Title {...pagina}/>
+            <Title {...paginaAutomacao}/>
             <ControleSection />
             <Footer />
         </>

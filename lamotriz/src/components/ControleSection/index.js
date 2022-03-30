@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import {data, texto} from "./Data"
-import { TextContainer, TextWrapper, TextWrapperContent, Heading, Subtitle, ListWrapper, ListBox, ListDateWrap, ListDate, ListTitleWrap, ListTitle, ListIconWrap} from './ControleElements';
+import {dataControle, textoControle, dataEficiencia, textoEficiencia} from "./Data"
+import { TextContainer, TextWrapper, InfoRow, Column1, Column2, TextWrapperContent, Heading, Subtitle, ListWrapper, ListBox, ListDateWrap, ListDate, ListTitleWrap, ListTitle, ListIconWrap, Nav, NavbarContainer, NavItem, NavMenu, NavLinks} from './ControleElements';
 import {HiOutlineLink} from 'react-icons/hi';
 import BannerPage from '../../components/Pages/BannerPage';
 import { animateScroll as scroll } from 'react-scroll';
@@ -8,8 +8,12 @@ import { animateScroll as scroll } from 'react-scroll';
 
 const ControleSection = () => {
        
-    const [state, setState] = useState({
-        controle_automacao: data
+    const [stateC, setStateC] = useState({
+        controle_automacao: dataControle
+    });
+
+    const [stateE, setStateE] = useState({
+        eficiencia_energetica: dataEficiencia
     });
 
     const toggleHome = () => {
@@ -19,26 +23,61 @@ const ControleSection = () => {
     return (
         <>
             <TextContainer>
+                <Nav>
+                    <NavbarContainer>
+                    <NavMenu>
+                        <NavItem>
+                        <NavLinks to="automacao" smooth={true} duration={500} spy={true} exact='true'>Controle e Automação</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                        <NavLinks to="eficiencia" smooth={true} duration={500} spy={true} exact='true'>Eficiência Energética</NavLinks>
+                        </NavItem>
+                    </NavMenu>
+                    </NavbarContainer>
+                </Nav>
                 <TextWrapperContent>
-                    <TextWrapper>
-                        <Heading>{texto.headline}</Heading>
-                        <Subtitle>{texto.subtitle1}</Subtitle>
-                        <Heading>Pesquisas</Heading>
-                    </TextWrapper>
-                    <ListWrapper>
-                        {state.controle_automacao.map(item => (
-                        <div key={item.id}>
-                            <ListBox to={item.url} onClick={toggleHome}>
-                                    <ListTitleWrap>
-                                        <ListTitle>{item.titulo}</ListTitle>
-                                    </ListTitleWrap>
-                                    <ListIconWrap>
-                                        <HiOutlineLink />
-                                    </ListIconWrap>
-                                </ListBox>
-                        </div> 
-                        ))}
-                    </ListWrapper>
+                    {/* <InfoRow> */}
+                        <Column1 id="automacao">
+                            <TextWrapper>
+                                <Heading>{textoControle.headline}</Heading>
+                                <Subtitle>{textoControle.subtitle1}</Subtitle>
+                            </TextWrapper>
+                            <ListWrapper>
+                                {stateC.controle_automacao.map(item => (
+                                <div key={item.id}>
+                                    <ListBox to={item.url} onClick={toggleHome}>
+                                            <ListTitleWrap>
+                                                <ListTitle>{item.titulo}</ListTitle>
+                                            </ListTitleWrap>
+                                            <ListIconWrap>
+                                                <HiOutlineLink />
+                                            </ListIconWrap>
+                                        </ListBox>
+                                </div> 
+                                ))}
+                            </ListWrapper>
+                        </Column1>
+                        {/* <Column2 id="eficiencia">
+                            <TextWrapper>
+                                <Heading>{textoEficiencia.headline}</Heading>
+                                <Subtitle>{textoEficiencia.subtitle1}</Subtitle>
+                            </TextWrapper>
+                            <ListWrapper>
+                                {stateE.eficiencia_energetica.map(item => (
+                                <div key={item.id}>
+                                    <ListBox to={item.url} onClick={toggleHome}>
+                                            <ListTitleWrap>
+                                                <ListTitle>{item.titulo}</ListTitle>
+                                            </ListTitleWrap>
+                                            <ListIconWrap>
+                                                <HiOutlineLink />
+                                            </ListIconWrap>
+                                        </ListBox>
+                                </div> 
+                                ))}
+                            </ListWrapper>
+                        </Column2> */}
+                    {/* </InfoRow> */}
                 </TextWrapperContent>
             </TextContainer>
         </>

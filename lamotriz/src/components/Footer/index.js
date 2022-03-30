@@ -19,8 +19,9 @@ const Footer = () => {
                             <FooterLinkTitle>Lamotriz</FooterLinkTitle>
                                 <FooterLink to="/" onClick={toggleHome}>Página Inicial</FooterLink>
                                 <FooterLink to="/quem_somos" onClick={toggleHome}>Quem Somos</FooterLink>
-                                <FooterLink to="/automacao_controle" onClick={toggleHome}>Automação e Controle</FooterLink>
-                                <FooterLink to="/eficiencia_energetica" onClick={toggleHome}>Eficiência Energética</FooterLink>
+                                <FooterLink to="/linhas_pesquisa" onClick={toggleHome}>Linhas de pesquisa</FooterLink>
+                                {/* <FooterLink to="/automacao_controle" onClick={toggleHome}>Automação e Controle</FooterLink>
+                                <FooterLink to="/eficiencia_energetica" onClick={toggleHome}>Eficiência Energética</FooterLink> */}
                                 <FooterLink to="/publicacoes" onClick={toggleHome}>Publicações</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>

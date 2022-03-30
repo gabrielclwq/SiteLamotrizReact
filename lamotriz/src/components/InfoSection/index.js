@@ -16,7 +16,7 @@ const InfoSection = ({lang}) => {
         lamotriz: "Lamotriz",
         descricaoLamotrizPT: "O Laboratório de Sistemas de Forças Motrizes do Departamento de Engenharia Elétrica da Universidade Federal do Ceará, possui expertise em simulações e ensaios de cargas industriais. O comportamento é analisado considerando a aplicação de técnicas de automação e controle, para a otimização operacional do sistema ou sua eficiência energética",
         descricaoLamotrizEN: "The Driving Force Systems Laboratory of the Electrical Engineering Department of the Federal University of Ceará has expertise in simulations and tests of industrial loads. The behavior is analyzed considering the application of automation and control techniques, for the operational optimization of the system or its energy efficiency",
-        automacaoPT: "Automação e Controle",
+        automacaoPT: "Linhas de pesquisa",
         automacaolEN: "Automation and Control",
         eficienciaPT: "Eficiência Energética",
         eficienciaEN: "Energy Efficiency",
@@ -57,21 +57,21 @@ const InfoSection = ({lang}) => {
                             <TextWrapper>
                                 <Heading>{!lang ? textos.automacaoPT : textos.automacaolEN}</Heading>
                                 <BtnWrap>
-                                    <Button to="/automacao_controle" onClick={toggleHome}>{!lang ? "Saiba mais" : "More about"}</Button>
+                                    <Button to="/linhas_pesquisa" onClick={toggleHome}>{!lang ? "Saiba mais" : "More about"}</Button>
                                 </BtnWrap>
-                                <ImgWrap to="/automacao_controle" onClick={toggleHome}>
+                                <ImgWrap to="/linhas_pesquisa" onClick={toggleHome}>
                                     <Img src={control_img}/>
                                 </ImgWrap>
                             </TextWrapper>
                         </Column1>
                         <Column2>
                             <TextWrapper>
-                                <Heading>{!lang ? textos.eficienciaPT : textos.eficienciaEN}</Heading>
+                                <Heading>{!lang ? textos.publicacoesPT : textos.publicacoesEN}</Heading>
                                 <BtnWrap>
-                                    <Button to="/eficiencia_energetica" onClick={toggleHome}>{!lang ? "Saiba mais" : "More about"}</Button>
+                                    <Button to="/publicacoes" onClick={toggleHome}>{!lang ? "Saiba mais" : "More about"}</Button>
                                 </BtnWrap>
-                                <ImgWrap to="/eficiencia_energetica" onClick={toggleHome}>
-                                    <Img src={eficiencia_img}/>
+                                <ImgWrap to="/publicacoes" onClick={toggleHome}>
+                                    <Img src={publicacoes_img}/>
                                 </ImgWrap>
                             </TextWrapper>
                         </Column2>
@@ -79,7 +79,7 @@ const InfoSection = ({lang}) => {
                 </InfoWrapper>
             </InfoContainer>
 
-            <InfoContainer>
+            {/* <InfoContainer>
                 <InfoWrapper>
                     <InfoRow>
                         <Column1>
@@ -94,12 +94,12 @@ const InfoSection = ({lang}) => {
                             <TextWrapper>
                                 <ImgWrap to="/publicacoes" onClick={toggleHome}>
                                     <Img src={publicacoes_img}/>
-                            </ImgWrap>
+                                </ImgWrap>
                             </TextWrapper>
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>
-            </InfoContainer>
+            </InfoContainer> */}
         </>
     );
 }

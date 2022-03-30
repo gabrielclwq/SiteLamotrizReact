@@ -16,21 +16,21 @@ export const data = [
     {
         "id": 2,
         "nome": "Ricardo Silva Thé Pontes",
-        "url": "/",
+        "url": "http://lattes.cnpq.br/1674775796751929",
         "posicao": "PESQUISADOR",
         "prioridade": 6
     },
     {
         "id": 3,
         "nome": "Dalton Honório de Araújo",
-        "url": "/",
+        "url": "http://lattes.cnpq.br/2463345182927912",
         "posicao": "PESQUISADOR",
         "prioridade": 6
     },
     {
         "id": 4,
         "nome": "Victor de Paula Brandão Aguiar",
-        "url": "/",
+        "url": "http://lattes.cnpq.br/7199289657548574",
         "posicao": "PESQUISADOR",
         "prioridade": 6
     },
@@ -66,119 +66,133 @@ export const data = [
         "id": 9,
         "nome": "Rômulo Nunes de Carvalho Almeida",
         "url": "/",
-        "posicao": "DOUTOURANDO",
+        "posicao": "DOUTORADO",
         "prioridade": 3
     },
     {
         "id": 10,
         "nome": "Clodomir Comaru",
         "url": "/",
-        "posicao": "DOUTOURANDO",
+        "posicao": "DOUTORADO",
+        "prioridade": 3
+    },
+    {
+        "id": 100,
+        "nome": "Laysa de Freitas Marques Holanda",
+        "url": "http://lattes.cnpq.br/9545953339068245",
+        "posicao": "DOUTORADO",
         "prioridade": 3
     },
     {
         "id": 11,
         "nome": "Gustavo Penaforte Brito ",
         "url": "/",
-        "posicao": "MESTRANDO",
+        "posicao": "MESTRADO",
         "prioridade": 2
     },
     {
         "id": 12,
         "nome": "Iury de Amorim Gaspar Filgueiras",
         "url": "/",
-        "posicao": "MESTRANDO",
+        "posicao": "MESTRADO",
         "prioridade": 2
     },
     {
         "id": 13,
         "nome": "Davi Alexandre Paiva",
         "url": "/",
-        "posicao": "MESTRANDO",
+        "posicao": "MESTRADO",
         "prioridade": 2
     },
     {
         "id": 14,
-        "nome": "Antônio Gustavo Lima Ferreira",
-        "url": "/",
-        "posicao": "MESTRANDO",
+        "nome": "Antonio Gustavo Lima Ferreira",
+        "url": "http://lattes.cnpq.br/8645840981072862",
+        "posicao": "MESTRADO",
         "prioridade": 2
     },
     {
         "id": 15,
         "nome": "Mauri Saraiva dos Santos",
         "url": "/",
-        "posicao": "MESTRANDO",
+        "posicao": "MESTRADO",
         "prioridade": 2
     },
     {
         "id": 16,
         "nome": "César Lédio de Alencar Filho",
         "url": "/",
-        "posicao": "MESTRANDO",
+        "posicao": "MESTRADO",
         "prioridade": 2
     },
     {
         "id": 17,
-        "nome": "Ana Carolina",
-        "url": "/",
-        "posicao": "MESTRANDO",
+        "nome": "Ana Carolina Araújo de Oliveira ",
+        "url": "http://lattes.cnpq.br/3340578265376742",
+        "posicao": "MESTRADO",
+        "prioridade": 2
+    },
+    {
+        "id": 170,
+        "nome": "Rafael Jucá Sancho Nogueira",
+        "url": "http://lattes.cnpq.br/9495680429487254",
+        "posicao": "MESTRADO",
         "prioridade": 2
     },
     {
         "id": 18,
         "nome": "Gabriel Costa Leite",
-        "url": "http://lattes.cnpq.br/1534588646348780",
-        "posicao": "GRADUANDO",
+        "url": "https://github.com/gabrielclwq",
+        "posicao": "GRADUAÇÃO",
         "prioridade": 1
     },
     {
         "id": 19,
         "nome": "Gabriel Fonseca Leite",
-        "url": "/",
-        "posicao": "GRADUANDO",
+        "url": "https://www.linkedin.com/in/gabriel-fonseca-9a712a191/",
+        "posicao": "GRADUAÇÃO",
         "prioridade": 1
     },
     {
         "id": 20,
         "nome": "João Luiz de Castro Pereira",
         "url": "https://www.linkedin.com/in/jo%C3%A3o-luiz-de-castro-pereira-eng/",
-        "posicao": "GRADUANDO",
+        "posicao": "GRADUAÇÃO",
         "prioridade": 1
     },
     {
         "id": 21,
         "nome": "José Eduardo Carvalho de Holanda",
         "url": "https://www.linkedin.com/in/joseduardoholanda/",
-        "posicao": "GRADUANDO",
+        "posicao": "GRADUAÇÃO",
         "prioridade": 1
     },
     {
         "id": 22,
         "nome": "João Vitor Rodrigues Queiroz",
         "url": "https://www.linkedin.com/in/jo%C3%A3o-vitor-rodrigues-queiroz-594045211/",
-        "posicao": "GRADUANDO",
+        "posicao": "GRADUAÇÃO",
         "prioridade": 1
     },
     {
         "id": 23,
         "nome": "Gabriel Sousa Fontenele",
         "url": "/",
-        "posicao": "GRADUANDO",
+        "posicao": "GRADUAÇÃO",
         "prioridade": 1
     },
     {
         "id": 24,
         "nome": "Jéssica Feitosa de Oliveira",
         "url": "https://www.linkedin.com/in/j%C3%A9ssica-feitosa-a7ba70180/",
-        "posicao": "GRADUANDO",
+        "posicao": "GRADUAÇÃO",
         "prioridade": 1
     }, 
     {
         "id": 25,
         "nome": "Lívia Belo Lima",
         "url": "https://www.linkedin.com/in/livia-lima-5aa714209/",
-        "posicao": "GRADUANDO",
+        "posicao": "GRADUAÇÃO",
         "prioridade": 1
     }
 ]

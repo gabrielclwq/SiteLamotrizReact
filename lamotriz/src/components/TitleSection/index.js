@@ -4,7 +4,6 @@ import { TitleContainer, TitleBg, ImgBg, TitleContent, TitleH1, TitleP} from './
 import {Button} from '../ButtonElements';
 import Logo from "../../images/logo-lamotriz.png"
 
-
 const Title = ({texto}) => {
   
   const [hover, setHover] = useState(false)

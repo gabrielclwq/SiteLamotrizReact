@@ -6,7 +6,7 @@ export const TitleContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin-top: 80px;
+    padding-top: 80px;
     height: 320px;
     position: relative;
     z-index: 1;
