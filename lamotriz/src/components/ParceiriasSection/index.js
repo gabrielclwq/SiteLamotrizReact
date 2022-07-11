@@ -17,10 +17,10 @@ const ParceiriasSection = () => {
                         <Heading>Parcerias</Heading>
                     </TextWrapper>
                     <FeatureImagesBg>
-                        <FeatureImg id='ufc' src={urlUfc}></FeatureImg>
-                        <FeatureImg id='eletrobras' src={urlEletrobras}></FeatureImg>
+                        {/* <FeatureImg id='ufc' src={urlUfc}></FeatureImg>
+                        <FeatureImg id='eletrobras' src={urlEletrobras}></FeatureImg> */}
                         <FeatureImg id='ppgee' src={urlPPGEE}></FeatureImg>
-                        <FeatureImg id='enel' src={urlEnel}></FeatureImg>
+                        {/* <FeatureImg id='enel' src={urlEnel}></FeatureImg> */}
                     </FeatureImagesBg>
                 </EstruturaWrapper>
             </EstruturaContainer>
